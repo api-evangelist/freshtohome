@@ -1,0 +1,21 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.freshtohome.com/
+limit_count: 0
+note: >-
+  No published rate limits. FreshToHome has no public API and no developer documentation,
+  so there is no documented limit, window, burst allowance, or exhaustion status code to
+  record. The one API host that does exist, api.freshtohome.com, is the private backend
+  for the FreshToHome web and mobile apps; it rejects every unauthenticated request with
+  HTTP 400 {"success":"error","message":"No token provided."} and returns no
+  X-RateLimit-*, RateLimit-* or Retry-After headers on that response, so no runtime
+  signal could be observed either. An honest zero.
+rate_limits: []
+observed_headers: []
+evidence:
+- url: https://api.freshtohome.com/
+  status: 400
+  finding: '{"success":"error","message":"No token provided."} — no rate-limit headers present'
+- url: https://www.freshtohome.com/llms.txt
+  status: 200
+  finding: provider-published llms.txt names no API and no limits

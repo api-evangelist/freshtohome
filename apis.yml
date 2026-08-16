@@ -1,17 +1,33 @@
 aid: freshtohome
 name: FreshToHome
-description: 'FreshToHome is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'FreshToHome (Freshtohome Foods Private Limited) is a Bangalore-headquartered
+  direct-to-consumer e-commerce company selling fresh, antibiotic-residue-free fish,
+  seafood, poultry, mutton, ready-to-cook and heat-and-eat food. Founded in 2015 by
+  Shan Kadavil, Mathew Joseph and Jayesh Jose, it runs its own farm-and-boat-to-doorstep
+  cold chain, sourcing from thousands of fishermen and farmers and delivering across
+  cities in India and the United Arab Emirates. The company sells through its website
+  and its consumer iOS and Android apps. It publishes an llms.txt at its web root but
+  operates no public developer program, API reference, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/freshtohome/refs/heads/main/apis.yml
+image: https://static.freshtohome.com/images/logo/2021/logo-medium.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
 - Company
+- E-Commerce
+- Food and Beverage
+- Grocery
+- Retail
+- Direct to Consumer
+- Supply Chain
+- Delivery
+- India
+- United Arab Emirates
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/freshtohome-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.freshtohome.com/
+- type: Blog
+  url: https://www.freshtohome.com/blog
+- type: Support
+  url: https://www.freshtohome.com/contact
+- type: FAQ
+  url: https://www.freshtohome.com/faq
+- type: TermsOfService
+  url: https://www.freshtohome.com/terms
+- type: PrivacyPolicy
+  url: https://www.freshtohome.com/privacy-policy
+- type: LLMsTxt
+  url: llms/freshtohome-llms.txt
+- type: Plans
+  url: plans/freshtohome-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/freshtohome-rate-limits.yml
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    FreshToHome is a direct-to-consumer food e-commerce business, not a software vendor,
+    and it markets no API: there is no developer host (developers., docs., apis. all
+    NXDOMAIN), no developer link anywhere in the site navigation or footer, no GitHub
+    organization, and no client library on npm, PyPI, RubyGems, crates.io or Packagist.
+    The one API host that does resolve, api.freshtohome.com, is the private backend for
+    its own consumer web and mobile apps — it answers every path, including every
+    /.well-known/ path and every OpenAPI/Swagger/GraphQL location, with HTTP 400
+    {"success":"error","message":"No token provided."}, and no public reference for it is
+    published anywhere. The single machine-readable document the company does serve is a
+    genuine hand-authored llms.txt at the web root, captured verbatim in llms/, and it
+    describes seven product categories and the support and legal pages — it names no API.
+  evidence:
+  - url: https://www.freshtohome.com/llms.txt
+    status: 200
+  - url: https://api.freshtohome.com/openapi.json
+    status: 400
+  - url: https://www.freshtohome.com/openapi.json
+    status: 404
+  - url: https://www.freshtohome.com/graphql
+    status: 404
+  - url: https://www.freshtohome.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/freshtohome
+    status: 404
+  checked: '2026-08-16'

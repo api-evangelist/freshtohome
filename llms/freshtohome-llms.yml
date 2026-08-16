@@ -1,0 +1,25 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.freshtohome.com/llms.txt
+file: llms/freshtohome-llms.txt
+http_status: 200
+content_type: text/plain
+bytes: 2307
+note: >-
+  FreshToHome publishes a real, hand-authored llms.txt at its web root, captured here
+  verbatim. It is a consumer-commerce orientation document, not an API index: it points
+  an agent at the seven product categories (fish, poultry, mutton, fillets, ready-to-cook,
+  heat-and-eat, cold-pressed juices), the FAQ and blog, the iOS and Android apps, and the
+  privacy/terms/refund policies. It names no API, no endpoint, no authentication scheme
+  and no machine-readable contract — which is consistent with everything else found in
+  this pass. Served 200 from www., api. and partner. hosts alike, so the rule appears to
+  sit at the Cloudflare edge rather than on one origin.
+sections:
+- name: Core Offerings
+  links: 7
+- name: Company & Support
+  links: 5
+- name: Legal & Compliance
+  links: 3
+mentions_api: false
+mentions_agent_tools: false

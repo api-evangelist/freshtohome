@@ -1,0 +1,19 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.freshtohome.com/
+plan_count: 0
+note: >-
+  FreshToHome publishes no API plans or developer pricing of any kind, because it sells
+  no API. It is a direct-to-consumer food e-commerce business: the only prices on the
+  site are per-product retail prices for fish, poultry, mutton and prepared meals, which
+  vary by city and are not an API rate card. There is no developer portal, no /pricing
+  page for developers, no free tier, and no "contact sales for API access" form. This is
+  a recorded zero from a real search of the site and the web, not an omission.
+plans: []
+evidence:
+- url: https://www.freshtohome.com/
+  status: 200
+  finding: consumer storefront; no developer or API pricing surface in the navigation or footer
+- url: https://developers.freshtohome.com/
+  status: NXDOMAIN
+  finding: no developer host exists

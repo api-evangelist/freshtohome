@@ -1,0 +1,86 @@
+generated: '2026-08-16'
+method: probed
+source: live HTTPS probes of every FreshToHome host known to this profile
+note: >-
+  Every /.well-known/ path probed returned a miss. www.freshtohome.com answers a
+  plain nginx 404 for all of them; api.freshtohome.com — the token-gated backend
+  that serves the FreshToHome consumer web and mobile apps — answers HTTP 400 with
+  {"success":"error","message":"No token provided."} for every path including
+  /.well-known/*, so it never reaches a document either. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml: this file records a verified ABSENCE, not a surface.
+hosts:
+- host: www.freshtohome.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: api.freshtohome.com
+  note: >-
+    All paths answer HTTP 400 "No token provided." — an authentication gate, not a
+    document. Treated as a miss.
+  paths:
+  - path: /.well-known/security.txt
+    status: 400
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 400
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 400
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 400
+    file: null
+  - path: /.well-known/api-catalog
+    status: 400
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 400
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 400
+    file: null
+  - path: /.well-known/agent.json
+    status: 400
+    file: null
+- host: partner.freshtohome.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+hit_count: 0
+non_well_known_hits:
+- path: /llms.txt
+  status: 200
+  file: llms/freshtohome-llms.txt
+  note: >-
+    Not a /.well-known/ path, but the one machine-readable document FreshToHome does
+    publish. Served 200 text/plain from every FreshToHome host (Cloudflare-level rule),
+    captured verbatim and wired as type LLMsTxt.

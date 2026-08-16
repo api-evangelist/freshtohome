@@ -1,0 +1,24 @@
+# FreshToHome
+
+> FreshToHome is a leading direct-to-consumer online brand for fresh, antibiotic-residue-free meat, seafood, and poultry. Founded in 2015, the platform connects fishermen and farmers directly to consumers, ensuring quality, hygiene, and doorstep delivery across various cities in India and the UAE.
+
+## Core Offerings
+- [Fish & Seafood](https://www.freshtohome.com/fish): A wide variety of marine fish, freshwater fish, and shellfish, cleaned and cut to preference.
+- [Poultry](https://www.freshtohome.com/poultry): Antibiotic residue-free chicken, duck, and quail, including various halal cuts.
+- [Mutton](https://www.freshtohome.com/mutton): High-quality, tender goat and lamb meat.
+- [Steaks & Fillets](https://www.freshtohome.com/fillet): Freshly cut, ready-to-grill or cook portions.
+- [Ready to Cook](https://www.freshtohome.com/ready-to-eat): Pre-marinated options like chicken tikka and garlic prawns, instant curries, gravies, pickles, and snacks.
+- [Heat & Eat](https://www.freshtohome.com/heat-and-eat): Clean, 100% preservative-free, and antibiotic-residue-free gourmet ready meals prepared by chefs and delivered fresh.
+- [Cold Pressed Juices](https://www.freshtohome.com/cold-pressed-juices): 100% pure, raw, and nutrient-dense juices extracted without heat or pasteurization, containing zero added sugar, water, or preservatives.
+
+## Company & Support
+- [FAQ](https://www.freshtohome.com/faq): Learn about our supply chain, mission to empower fishermen, and our quality standards.
+- [Blog](https://www.freshtohome.com/blog): Recipes, cooking guides, and tips for preparing chicken, mutton, and seafood.
+- [Contact Support](mailto:customercare@freshtohome.com): Reach out for order-related queries.
+- [Download App (iOS)](https://apps.apple.com/in/app/fresh-to-home-fresh-fish-meat/id1390207344)
+- [Download App (Android)](https://play.google.com/store/apps/details?id=com.freshtohome)
+
+## Legal & Compliance
+- [Privacy Policy](https://www.freshtohome.com/privacy-policy): Information on how customer data is collected, used, and protected.
+- [Terms and Conditions](https://www.freshtohome.com/terms): Legal terms governing the use of the platform and purchases.
+- [Refund Policy](https://www.freshtohome.com/refund-policy): Details on order cancellations, returns, and refunds.
