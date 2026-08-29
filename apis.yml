@@ -9,6 +9,17 @@ description: 'FreshToHome (Freshtohome Foods Private Limited) is a Bangalore-hea
   and its consumer iOS and Android apps. It publishes an llms.txt at its web root but
   operates no public developer program, API reference, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/freshtohome/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://static.freshtohome.com/images/logo/2021/logo-medium.png
 x-type: company
 x-source: harvest:secondary-market
