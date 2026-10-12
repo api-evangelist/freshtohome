@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/freshtohome/integrations
+- https://n8n.io/integrations/freshtohome/
+- https://composio.dev/toolkits/freshtohome
+- https://monid.ai/tools/freshtohome
+checked:
+- https://composio.dev/toolkits/freshtohome
+- https://monid.ai/tools/freshtohome
+- https://n8n.io/integrations/freshtohome/
+- https://zapier.com/apps/freshtohome/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
